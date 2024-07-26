@@ -17,5 +17,6 @@ Success of the tool installation segment may vary depending on the type of Linux
 ![2](https://github.com/user-attachments/assets/7b85f25d-b097-4e18-8897-bfa6b4095d29)
 
 <b>Full Log and Data:</b>
+
 ![3](https://github.com/user-attachments/assets/8e5a2522-07c0-4beb-b0fc-6fbe9618b97d)
 ![4](https://github.com/user-attachments/assets/26d4396f-e7e7-4bbe-b122-feed37663add)
