@@ -14,7 +14,7 @@ Success of the tool installation segment may vary depending on the type of Linux
 <b>Full Script Run:</b>
 
 ![1](https://github.com/user-attachments/assets/bc06567f-0439-46ed-b2a0-0af0a2e17cef)
-![2](https://github.com/user-attachments/assets/7b85f25d-b097-4e18-8897-bfa6b4095d29)
+![2](https://github.com/user-attachments/assets/b00e4930-8f8c-4301-b79b-9c85a291db2e)
 
 <b>Full Log and Data:</b>
 
