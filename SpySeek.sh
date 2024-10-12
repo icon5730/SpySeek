@@ -214,6 +214,10 @@ N) read -p "$(echo -e "\n$cyan[?]$endcolor$yellow Would you like to scan another
     case  $response in
     Y) sleep 0.3 ; scn
     ;;
+    y) echo -e "$cyan[+]$endcolor$blue Rescanning...$endcolor"
+    sshpass -p $servpw ssh -o StrictHostKeyChecking=no $userserv@$ipserv "whois $scan" >> $scan.txt
+    sshpass -p $servpw ssh -o StrictHostKeyChecking=no $userserv@$ipserv "nmap -Pn -p- -sV $scan" >> $scan.txt
+    ;;
     N)
     echo -e "\n$yellow*******************************************************************************"
     echo -e "*****************************SCAN COMPLETE! EXITING...*************************"
@@ -240,7 +244,17 @@ read -p "$(echo -e "\n$cyan[?]$endcolor$yellow Would you like to scan another ta
 case  $answer in
 Y) sleep 0.3 ; scn
 ;;
+y) sleep 0.3 ; scn
+;;
 N)
+echo -e "\n$yellow*******************************************************************************"
+echo -e "*****************************SCAN COMPLETE! EXITING...*************************"
+echo -e "*******************************************************************************"
+echo -e "*******************************************************************************$endcolor"
+service tor stop &> /dev/null
+exit 1 
+;;
+n)
 echo -e "\n$yellow*******************************************************************************"
 echo -e "*****************************SCAN COMPLETE! EXITING...*************************"
 echo -e "*******************************************************************************"
