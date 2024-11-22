@@ -25,7 +25,7 @@ function installation1(){
 if ! command -v figlet &> /dev/null
     then
     echo -e "$red[!] Figlet is not installed$endcolor"
-    echo "$yellow[+] Installing figlet$endcolor"
+    echo -e "$yellow[+] Installing figlet$endcolor"
     apt-get install figlet -y &> /dev/null
         if ! command -v figlet &> /dev/null
             then
